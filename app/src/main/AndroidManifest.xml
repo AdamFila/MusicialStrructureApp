@@ -16,6 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".LibraryActivity"
+            android:label="Library" />
+        <activity
+            android:name=".NowPlayingActivity"
+            android:label="NowPlaying" />
     </application>
 
 </manifest>
