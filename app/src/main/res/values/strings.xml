@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Musicial Strructure App</string>
+
+    <!-- -->
+    <string name="line">===========================</string>
+    <string name="library">Library</string>
+    <string name="now_playing">Now Playing</string>
 </resources>

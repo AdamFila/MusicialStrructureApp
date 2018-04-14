@@ -18,10 +18,10 @@
         </activity>
         <activity
             android:name=".LibraryActivity"
-            android:label="Library" />
+            android:label="@string/library" />
         <activity
             android:name=".NowPlayingActivity"
-            android:label="NowPlaying" />
+            android:label="@string/now_playing" />
     </application>
 
 </manifest>
