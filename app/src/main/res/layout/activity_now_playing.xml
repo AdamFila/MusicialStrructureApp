@@ -1,9 +1,85 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backGround"
+    android:orientation="vertical"
     tools:context="com.example.android.musicialstrructureapp.NowPlayingActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        style="@style/Basic"
+        android:id="@+id/now_playing"
+        android:textColor="@color/text"
+        android:textStyle="bold"
+        android:textSize="@dimen/Big_text_size"
+        android:text="Now Playing"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        style="@style/Basic"
+        android:id="@+id/author"
+        android:textColor="@color/text"
+        android:textStyle="bold"
+        android:textSize="@dimen/medium_text_size"
+        android:text="Author"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/now_playing"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backGround"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true">
+
+
+        <ImageView
+            android:src="@drawable/ic_album_white_48dp"
+            android:id="@+id/album"
+            android:scaleType="centerInside"
+            android:layout_width="@dimen/list_item_middle_height"
+            android:layout_height="@dimen/list_item_height"
+            android:layout_toRightOf="@id/next"
+            android:layout_toEndOf="@id/next"/>
+
+        <ImageView
+            android:src="@drawable/ic_skip_next_white_48dp"
+            android:id="@+id/next"
+            android:scaleType="centerInside"
+            android:layout_width="@dimen/list_item_middle_height"
+            android:layout_height="@dimen/list_item_height"
+            android:layout_toRightOf="@id/play_pause"
+            android:layout_toEndOf="@id/play_pause"/>
+
+
+        <ImageView
+            android:src="@drawable/ic_play_arrow_white_48dp"
+            android:id="@+id/play_pause"
+            android:scaleType="centerInside"
+            android:layout_width="@dimen/list_item_height"
+            android:layout_height="@dimen/list_item_height"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:src="@drawable/ic_skip_previous_white_48dp"
+            android:id="@+id/previous"
+            android:scaleType="centerInside"
+            android:layout_width="@dimen/list_item_middle_height"
+            android:layout_height="@dimen/list_item_height"
+            android:layout_toLeftOf="@id/play_pause"
+            android:layout_toStartOf="@id/play_pause"/>
+
+        <ImageView
+            android:src="@drawable/ic_replay_white_48dp"
+            android:id="@+id/repeat"
+            android:scaleType="centerInside"
+            android:layout_width="@dimen/list_item_middle_height"
+            android:layout_height="@dimen/list_item_height"
+            android:layout_toLeftOf="@id/previous"
+            android:layout_toStartOf="@id/previous"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>

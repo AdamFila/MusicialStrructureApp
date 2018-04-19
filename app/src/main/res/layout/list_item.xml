@@ -32,6 +32,7 @@
             android:layout_height="@dimen/list_item_half_height"
             android:gravity="bottom"
             android:layout_toRightOf="@id/image"
+            android:layout_toEndOf="@id/image"
             android:textAppearance="?android:textAppearanceMedium"
             android:textColor="@color/text"
             android:textStyle="bold"
@@ -44,6 +45,7 @@
             android:layout_below="@id/author_text_view"
             android:gravity="top"
             android:layout_toRightOf="@id/image"
+            android:layout_toEndOf="@id/image"
             android:textAppearance="?android:textAppearanceMedium"
             android:textColor="@color/text"
             tools:text="one" />
