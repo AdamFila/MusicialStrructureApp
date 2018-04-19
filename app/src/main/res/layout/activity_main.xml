@@ -7,6 +7,8 @@
     android:orientation="vertical"
     tools:context="com.example.android.musicialstrructureapp.MainActivity">
 
+
+
     <TextView
         style="@style/Basic"
         android:textColor="@color/text"

@@ -23,6 +23,15 @@
         <item name="android:layout_margin">@dimen/very_small_padmar</item>
         <item name="android:padding">@dimen/very_small_padmar</item>
     </style>
+
+    <style name="SmallButtons" parent="Basic">
+        <item name="android:background">@color/text</item>
+        <item name="android:textColor">@color/backGround</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/small_text_size</item>
+        <item name="android:layout_margin">@dimen/extra_small_padmar</item>
+        <item name="android:padding">@dimen/extra_small_padmar</item>
+    </style>
         
 
 </resources>

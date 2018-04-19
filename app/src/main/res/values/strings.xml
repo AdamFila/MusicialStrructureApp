@@ -5,4 +5,6 @@
     <string name="line">===========================</string>
     <string name="library">Library</string>
     <string name="now_playing">Now Playing</string>
+
+    <string name="actualy_playing">NOW</string>
 </resources>
